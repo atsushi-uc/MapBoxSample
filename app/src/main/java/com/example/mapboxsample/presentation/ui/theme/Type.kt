@@ -1,4 +1,4 @@
-package com.example.mapboxsample.ui.theme
+package com.example.mapboxsample.presentation.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

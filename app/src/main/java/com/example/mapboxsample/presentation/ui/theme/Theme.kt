@@ -1,4 +1,4 @@
-package com.example.mapboxsample.ui.theme
+package com.example.mapboxsample.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build

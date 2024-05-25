@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">MapBoxSample</string>
+    <string name="header_title">MapBoxSample</string>
+    <!--COMPONENTS-->
+    <string name="error_dialog_message_default_title">エラー</string>
+    <string name="error_dialog_btn_positive">OK</string>
+    <string name="search_bar_icon_clear_content_description">close</string>
+    <string name="search_bar_placeholder_text">Search…</string>
+    <string name="common_app_bottom_nav_action_more_vert_description">more vert</string>
+    <string name="common_app_bottom_nav_action_edit_description">edit</string>
+    <string name="common_app_bottom_nav_action_delete_description">delete</string>
+    <string name="common_app_bottom_nav_floating_action_add_description">add</string>
+    <string name="common_app_bottom_nav_action_more_vert_login_text">LOGIN</string>
+    <string name="common_app_bottom_nav_action_more_vert_login_description">login</string>
+    <string name="common_app_bottom_nav_action_more_vert_home_text">HOME</string>
+    <string name="common_app_bottom_nav_action_more_vert_home_description">home</string>
+    <string name="common_app_bottom_nav_action_more_vert_photo_detail_text">PHOTO DETAIL</string>
+    <string name="common_app_bottom_nav_action_more_vert_photo_detail_description">photo_detail</string>
 </resources>
