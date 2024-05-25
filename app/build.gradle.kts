@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.androidHilt)
+    alias(libs.plugins.kaptKotlin)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -66,4 +69,19 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    //Hilt
+    implementation(libs.androidx.hilt)
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.compiler)
+    //Retrofit
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.mock)
+    implementation(libs.retrofit.converter.moshi)
+    //Moshi
+    implementation(libs.moshi.kotlin)
+    //Coil
+    implementation(libs.coil.compose)
+    //Room
+    implementation(libs.room.runtime)
+    kapt(libs.room.compiler)
 }
