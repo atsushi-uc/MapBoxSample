@@ -16,6 +16,7 @@ retrofit = "2.9.0"
 moshiKotlin = "1.14.0"
 coilCompose = "2.2.2"
 room = "2.6.1"
+mapbox = "11.4.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -42,6 +43,8 @@ moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.re
 coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coilCompose" }
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+mapbox = { group = "com.mapbox.maps", name = "android", version.ref = "mapbox" }
+mapbox-extension = { group = "com.mapbox.extension", name = "maps-compose", version.ref = "mapbox" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

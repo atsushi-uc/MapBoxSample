@@ -27,6 +27,15 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.example.mapboxsample.presentation.component.ErrorDialog
 import com.example.mapboxsample.R
+import com.mapbox.geojson.Point
+import com.mapbox.maps.MapboxExperimental
+import com.mapbox.maps.Style
+import com.mapbox.maps.dsl.cameraOptions
+import com.mapbox.maps.extension.compose.MapboxMap
+import com.mapbox.maps.extension.compose.animation.viewport.MapViewportState
+import com.mapbox.maps.extension.compose.animation.viewport.rememberMapViewportState
+import com.mapbox.maps.extension.compose.style.MapStyle
+import com.mapbox.maps.plugin.animation.MapAnimationOptions
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -71,6 +80,7 @@ fun HomeScreen(
     }
 }
 
+@OptIn(MapboxExperimental::class)
 @Composable
 fun HomeContent(
     paddingValues: PaddingValues = PaddingValues(),
@@ -87,6 +97,20 @@ fun HomeContent(
                 .fillMaxWidth()
                 .padding(top = 30.dp, start = 10.dp, end = 10.dp),
         ) {
+
+            MapboxMap(
+                Modifier.fillMaxSize(),
+                mapViewportState = MapViewportState().apply {
+                    setCameraOptions {
+                        zoom(2.0)
+                        center(Point.fromLngLat(-98.0, 39.5))
+                        pitch(0.0)
+                        bearing(0.0)
+                    }
+                },
+            )
+
+
 
         }
         if (isLoading) {

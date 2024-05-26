@@ -84,4 +84,8 @@ dependencies {
     //Room
     implementation(libs.room.runtime)
     kapt(libs.room.compiler)
+    //MapBox
+    implementation(libs.mapbox)
+    implementation(libs.mapbox.extension)
+
 }
